@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { StickyNote } from '../components/StickyNote'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -13,11 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Things to get done   
-        </h1>
-
-        
+        {/* <h1 className={styles.title}>Things to get done</h1> */}
+        <StickyNote />
       </main>
     </div>
   )
